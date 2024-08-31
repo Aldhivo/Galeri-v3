@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="icon-user">
+            <i class="fa-solid fa-user-circle"></i>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="Search here">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="icon-menu">
+            <i class="fa-solid fa-bars" id="menu1"></i>
+        </div>
+
+        <div class="nav-menu hidden" id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <i class="fa-solid fa-xmark" id="menu2"></i>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <h2>Login to your account</h2>
+
+            <div class="input-group">
+                <input type="text" placeholder="User Name">
+                <input type="password" placeholder="Password" id="password">
+
+                <div class="icon-input">
+                    <i class="fa-solid fa-user-circle"></i>
+                    <i class="fa-solid fa-lock"></i>
+                    <i class="fa-solid fa-eye-slash" id="eye"></i>
+                </div>
+
+                <div class="no-account">
+                    <p>don't have an account yet? <a href="#">Register</a></p>
+                </div>
+            </div>
+
+            <button>Login</button>
+
+            <div class="or">
+                <span>------OR------</span>
+                <p>login as a guest</p>
+                <a href="index.html">
+                    <i class="fa-solid fa-user-tie" id="guest"></i>
+                </a>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024 Aldhivo, hak cipta dilindungi undang-undang</p>
+    </footer>
+
+    <script src="script_login.js"></script>
+</body>
+</html>

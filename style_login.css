@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #003636;
+}
+
+header{
+    background-color: darkcyan;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header .icon-user{
+    font-size: 30px;
+    color: lightcyan;
+    margin: 0 5px;
+}
+
+header .search{
+    position: relative;
+}
+
+header .search input{
+    padding: 9px 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+header .search i{
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    right: 10px;
+    color: darkcyan;
+}
+
+header .nav{
+    display: flex;
+    gap: 30px;
+}
+
+header .nav a{
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: lightcyan;
+    padding-top: 4px;
+}
+
+header .nav a:hover{
+    text-decoration: underline;
+}
+
+header .icon-menu{
+    font-size: 30px;
+    color: lightcyan;
+    cursor: pointer;
+    display: none;
+}
+
+main form{
+    color: lightcyan;
+    background-color: #004949;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px black;
+}
+
+main form .input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+main form .input-group input{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px black;
+    padding-left: 50px;
+}
+
+main form .input-group .icon-input{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    position: absolute;
+    top: 0px;
+}
+
+main form .input-group .icon-input i{
+    font-size: 20px;
+    background-color: darkcyan;
+    padding: 8px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+main form .input-group .icon-input .fa-eye-slash{
+    position: absolute;
+    top: 55px;
+    background-color: transparent;
+    left: 210px;
+    color: darkcyan;
+    cursor: pointer;
+}
+
+main form .input-group .no-account{
+    margin-top: -18px;
+    color: lightcyan;
+}
+
+main form .input-group .no-account p a{
+    color: cyan;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main form .input-group .no-account p a:hover{
+    text-decoration: underline;
+}
+
+main form button{
+    padding: 8px 100px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: cyan;
+    font-size: 18px;
+    font-weight: bold;
+    color: lightcyan;
+    box-shadow: 0 10px 20px black;
+}
+
+main form .or{
+    margin: 20px 0;
+}
+
+main form .or a i{
+    font-size: 30px;
+    color: lightcyan;
+}
+
+main form .or a i:hover{
+    background-color: cyan;
+    padding: 8px;
+    border-radius: 100%;
+    box-shadow:
+    0 0 5px darkcyan,
+    0 0 15px cyan,
+    0 0 25px lightcyan;
+}
+
+footer{
+    background-color: darkcyan;
+    margin-top: 200px;
+    padding: 10px 0;
+    text-align: center;
+    color: lightcyan;
+}
+
+header .nav-menu{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 590px){
+    header .nav{
+        display: none;
+    }
+   
+    header .nav-menu{
+        display: block;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background-color: darkcyan;
+        margin-left: -10px;
+        margin-top: -10px;
+        width: 100%;
+        z-index: 1;
+        font-size: 22px;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        font-weight: bold;
+    }
+
+    header .nav-menu i{
+        color: lightcyan;
+        font-size: 30px;
+        position: fixed;
+        cursor: pointer;
+        top: 15px;
+        right: 20px;
+    }
+    
+    header .nav-menu a{
+        color: lightcyan;
+        text-decoration: none;
+    }
+
+    header .nav-menu a:hover{
+        text-decoration: underline;
+    }
+
+    header .hidden{
+        display: none;
+    }
+
+    header .icon-menu{
+        display: block;
+        /* position: fixed;
+        left: 520px; */
+    }
+}
